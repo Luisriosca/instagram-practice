@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Fira Code';
+    font-size: 19px;
+}
+
+header{
+    position: sticky; top: 0px; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+header > * {
+    /* height: 10vh; */
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    
+}
+nav > *{
+    padding-right: 0.5rem;
+    width: 15%;
+}
+
+nav > *:hover{
+    transform: scale(1.25);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #efefee;
+    border-radius: 5%;
+    width: 80%;
+    height: 90%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.post > * {
+    width: 75vw;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.5rem;
+  }
+  
+.avatar img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.options-bar{
+    margin: .5rem 0 0 0;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: #efefee solid 2px;
+}
+.options-bar > *:hover{
+    transform: scale(1.1);
+}
+.post-img{
+    background-image: url('/assets/img/img1.jpg');
+    height: 20rem;
+    background-size: cover;
+}
+.post-img2{
+    background-image: url('/assets/img/img2.jpg');
+    height: 20rem;
+    background-size: cover;
+}
+.post-img3{
+    background-image: url('/assets/img/img3.jpeg');
+    height: 20rem;
+    background-size: center;
+}
+
+.post-coments{
+    margin-top: .5rem;   
+    height: 4rem;
+    text-align: justify;
+}
+
+.copy{
+    color: crimson;
+}
+.copy > a{
+    text-decoration: solid;
+
+}
+
+.copy > a:hover {
+    text-decoration: line-through;
+    color: crimson;
+    text-shadow: aqua;
+}
